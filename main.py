@@ -42,9 +42,24 @@ def main():
     # Chart
     visualizer = Visualize(file1, file2)
     visualizer.compare_mean_price_for_popular_weight()
-    visualizer.plot_pie_or_histogram_for_meat_types()
-    visualizer.plot_heatmap_for_meat_and_price()
+    visualizer.pie_chart()
+    visualizer.heatmap()
 
 
 if __name__ == "__main__":
     main()
+
+
+######################################################################################################################
+################################################RAPORT################################################################
+######################################################################################################################
+# Analiza rozpoczęła się od pobrania danych ze stron internetowych, aby to zrobić na pierwszej z nich trzebabyło dodać
+# kliknięcie przycisku akceptacji cookies oraz potem po pobraniu przejście na drugą stronę aby pobrać resztę danych, po
+# czym dane zostały zapisane do pliku .csv. Dla drugiej strony trzeba było po wczytaniu danych zjechać scrolem na dół
+# strony po czym przejśc na kolejną i tak aż do momentu pobrania 18 stron danych, również ich wynik został zapisany do
+# pliku .csv. Następnie pliki zostały oczyszczone i przygotowane zostały dane wejściowe, zmienione separatory, rozdzielenie
+# nazwy na gramaturę i rodzaj mięsa, poprawa zapisu ceny oraz transformacja ceny i wagi na postać numeryczną, po tym
+# przeprowadzono analizy w ramach średniej ceny i popularności gramatury, oraz typ mięs i ich cena co zostało zapisane
+# do 2 plików w formacie .txt oraz ostatniego w formacie .txt który posiadał porównanie 2 stron. Na sam koniec zostały
+# stworzone 3 wykresy, które pozwoliły wizualnie zobrazować różnice między sklepami, które dokładniej zostały opisane
+# w pliku README.md jako porównania, wnioski i spostrzeżenia.
