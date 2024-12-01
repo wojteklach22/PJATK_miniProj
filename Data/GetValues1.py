@@ -38,7 +38,7 @@ class GetValues1:
 
         btn_2nd_page = self.driver.find_element(By.CSS_SELECTOR, "li.pagination__element.--item a.pagination__link")
         btn_2nd_page.click()
-        time.sleep(7) #need this sleep because website is loading extremly slowly
+        time.sleep(7) # Need this sleep because website is loading extremly slowly
         products_data += self.fetch_products()
 
         return products_data
